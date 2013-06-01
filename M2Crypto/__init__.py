@@ -26,6 +26,7 @@ import AuthCookie
 import BIO
 import BN
 import Rand
+import DummyRand
 import DH
 import DSA
 if m2.OPENSSL_VERSION_NUMBER >= 0x90800F and m2.OPENSSL_NO_EC == 0:

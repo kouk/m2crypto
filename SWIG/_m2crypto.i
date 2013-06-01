@@ -60,6 +60,7 @@ static PyObject *ssl_set_tmp_rsa_cb_func;
 %include _bio.i
 %include _bn.i
 %include _rand.i
+%include _dummyrand.i
 %include _evp.i
 %include _aes.i
 %include _rc4.i
