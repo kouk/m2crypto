@@ -21,6 +21,13 @@ class RandTestCase(unittest.TestCase):
         a, b = Rand.rand_pseudo_bytes(1)
         assert len(a) == 1
         assert b == 1
+
+    def test_file_name(self):
+        if "RANDFILE" in os.environ:
+            assert Rand.rand_file_name() == os.environ["RANDFILE"]
+        else:
+            assert Rand.rand_file_name() == os.path.join(
+                                os.environ["HOME"],".rnd")
         
     def test_load_save(self):
         try:
